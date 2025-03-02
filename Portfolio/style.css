@@ -1,0 +1,302 @@
+﻿html, body {
+    /*width: 100%;*/
+    height: 100%;
+}
+
+body{
+    background-color: #101214;
+    margin: 0%;
+    padding: 0%;
+}
+
+.bodyAnimateIn {
+    animation: fadeIn .8s ease-in;
+}
+
+.bodyAnimateOut {
+    transition: opacity .8s;
+    opacity: 0;
+}
+
+.left {
+    animation: slideInFromLeft .8s;
+}
+
+.right {
+    animation: slideInFromRight .8s;
+}
+
+/* #region Animations*/
+
+@keyframes slideInFromTop {
+    0% { 
+        bottom : 50%;
+        opacity: 0%;
+    }
+    
+    100% {
+        bottom: 0%;
+        opacity: 100%;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% { 
+        right : 100%;
+        opacity: 0%;
+    }
+    
+    100% {
+        right: 0%;
+        opacity: 100%;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        left: 100%;
+        opacity: 0%;
+    }
+
+    100% {
+        left: 0%;
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+}
+
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+}
+/* #endregion */
+
+
+.contentBlockAnimateOut {
+    transition: right .8s;
+    right: 200%;
+}
+
+video
+{
+    margin: 0%;
+    width: 100%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#contentGrid {
+    /* padding-top: 3%; */
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    align-items: stretch;
+}
+
+#entete {
+    z-index: 5;
+    background-color: #101214;
+    width: 100%; 
+    position: fixed;
+    top: 0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#name{
+    font-size: 250%;
+    font-weight: 700;
+}
+
+#job{
+    font-size: 120%;
+}
+
+#selfIntro {
+    color: #fffbf2;
+    font-family: 'Montserrat', sans-serif;
+
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.additionalInfosBlock {
+    background-color: #0000007c;
+    
+    display: flex;
+    
+    /* height: 0; */
+    position:absolute;
+    align-items: center;
+
+    /* top: 80%; */
+    /* top: 17.35vw; */
+
+    margin-top: 45%;
+
+    width: 100%;
+    height: 20%;
+}
+
+.additionalInfosContent{
+    color: #fffbf2;
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(186, 47, 156) 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+  
+  .bg3 {
+    animation-duration:5s;
+}
+
+.centralBlock{
+    background-color: #101214;
+    border-radius: 25px;
+    margin-top: 10%;
+    margin-left: 17%;
+    margin-right: 17%;
+    padding-top: 7%;
+    box-shadow: 0 50px 40px -20px black;
+
+    outline: solid;
+    outline-color: #fffbf2 ;
+    outline-width: 3.5px;
+    outline-offset: 5px;
+
+    position: relative;
+
+    animation: slideInFromTop .8s;
+}
+
+.contentBlock{
+    background-color: #101214;
+    border-radius: 25px;
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    box-shadow: 0 50px 40px -20px black;
+    position: relative;
+    outline: solid;
+    outline-color: #fffbf2 ;
+    outline-width: 3.5px;
+    outline-offset: 5px;
+}
+
+
+
+@property --angle {
+syntax: "<angle>";
+initial-value: 0deg;
+inherits: false;
+}
+
+.context {
+    color: #fffbf2;
+    font-family: 'Montserrat', sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    margin-bottom: 5%;
+}
+
+.contextPost{
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 150%;
+    color: #8aceff;
+}
+
+.contextText{
+    margin-top: 4%;
+    color: #fffbf2;
+    font-family: 'Quicksand';
+}
+
+.contextTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 250%;
+    text-decoration: none;
+    color: #ff8ad6;
+}
+
+.contextTitle:hover{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 250%;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    /* color: rgb(232, 255, 138); */
+    color: #fc3963;
+}
+
+.logo{
+    width: 4%;
+    height: 35%;
+    margin-right: 7px;
+}
+
+.info{
+    margin-right: 17px;
+}
+
+.socials {
+    color: #fffbf2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+}
+
+.videoBlock{
+    display:  flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
