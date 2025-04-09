@@ -1,7 +1,11 @@
-﻿body {
+﻿html {
+    font-size: 62.5%; /* 62.5% de 16px = 10px */
+}
+
+body {
     display: flex;
     background-color: #101214;
-    margin: 0;
+    margin: 0 0 10rem 0;
     font-family: 'Montserrat', sans-serif;
 
     animation: fadeIn .8s ease-in;
@@ -37,16 +41,16 @@
         background-color: #101214;
         color: #fffbf2;        
         /* Haut Droite Bas Gauche */
-        padding: 10px 0 10px 0;
+        padding: 1rem 0 1rem 0;
         
         #selfIntro {
             #name {
-                font-size: 250%;
+                font-size: 4rem;
                 font-weight: 700;
             }
             
             #job {
-                font-size: 120%;
+                font-size: 2rem;
             }
         }
     }
@@ -56,14 +60,14 @@
 video {
     margin: 0;
     width: 100%;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
 }
 
 #project-grid {
-    margin-top: 10%;
+    margin-top: 15rem;
     display: grid;
-    row-gap: 12%;
+    row-gap: 8rem;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(2, 2fr);
     align-items: stretch;
@@ -73,8 +77,8 @@ video {
         display: flex;
         flex-direction: column;
         background-color: #101214;
-        border-radius: 25px;
-        margin: 10%;
+        border-radius: 2.5rem;
+        margin: 7rem;
         box-shadow: 0 50px 40px -20px black;
         outline: solid;
         outline-color: #fffbf2 ;
@@ -82,7 +86,7 @@ video {
         outline-offset: 5px;
         /* position -> relative : Pour le bien de l'animation left */
         position: relative;
-        margin-bottom: 1%;
+        margin-bottom: 1rem;
 
         .video {
             display: flex;
@@ -90,22 +94,24 @@ video {
         }
         .project-details {
             display: flex;
-            position: absolute;
             background: rgba(0, 0, 0, 0.486);
             font-family: 'Quicksand';    
             color: #fffbf2;
-            top: 16.5rem;
             /* Haut Droite Bas Gauche */
-            padding: 3%;
+            padding: 2rem;
+            margin-top: -7.2rem;
+            z-index: 5;
             width: -webkit-fill-available;
             .bloc-detail {
                 display: flex;
-                margin-right: 4%;
+                margin-right: 2rem;
+                font-size: 1.6rem;
                 .logo {
                     display: flex;
-                    width: 25px;    /* taille uniforme */
-                    height: 25px;
-                    padding: 4px;
+                    width: 2.5rem;    /* taille uniforme */
+                    height: 2.5rem;
+                    padding: 0.5rem;
+                    margin-right: 0.5rem;
                     img {
                         max-width: 80%;
                         max-height: 80%;
@@ -123,11 +129,11 @@ video {
             color: #fffbf2;
             display: flex;
             flex-direction: column;
-            padding: 3%;
+            padding: 2rem;
 
             .project-title {
                 font-weight: 700;
-                font-size: 250%;
+                font-size: 4rem;
                 text-decoration: none;
                 color: #ff8ad6;
 
@@ -139,13 +145,14 @@ video {
             }
             .project-post {
                 font-weight: 500;
-                font-size: 150%;
+                font-size: 2.5rem;
                 color: #8aceff;
             }
             .project-text {
                 font-family: 'Quicksand';
+                font-size: 1.6rem;
                 color: #fffbf2;
-                margin-top: 4%;
+                margin-top: 2.5rem;
                 /* TODO: Regler margin */
             }       
         }
