@@ -189,6 +189,12 @@ video {
     animation: slideInFromTop .8s;
 } */
 
+@media (max-width: 1000px) {
+    #project-grid {
+      grid-template-columns: 1fr; /* une seule colonne */
+      grid-template-rows: auto;   /* laisse les lignes se créer naturellement */
+    }
+}
 
 .bodyAnimateOut {
     transition: opacity .8s;
