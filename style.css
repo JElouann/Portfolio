@@ -101,7 +101,7 @@ video {
             color: #fffbf2;
             /* Haut Droite Bas Gauche */
             padding: 2rem;
-            margin-top: -7.2rem;
+            margin-top: -7.5rem;
             z-index: 5;
             width: -webkit-fill-available;
             .bloc-detail {
