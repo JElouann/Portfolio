@@ -75,17 +75,28 @@ body {
             cursor: pointer;
             transition: background-color 0.3s, color 0.3s; */
             position: fixed;
-            top: 105px;
-            left: 60px;
+            top: 120px;
+            left: 5px;
             z-index: 99;
+            color: #101214;
+            font-weight: 500;
+            font-size: 25px;
+            font-family: 'Montserrat', sans-serif;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        :hover{
+            color: #fffbf2;
         }
     }
 
     .contentGrid{
-        margin-top: 15rem;
+        margin-top: 18rem;
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        /* grid-template-rows: repeat(3, 1fr); */
+        /* grid-template-columns: repeat(9, 1fr); */
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 25fr 7fr 15fr 7fr 25fr;
         justify-items: center;
         /* gap: 2rem; */
@@ -108,7 +119,22 @@ body {
 
             position: relative;
 
-            animation: slideInFromTop .8s;
+            /* animation: slideInFromTop .8s; */
+
+            .title {
+                font-size: 30px;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .pink{
+                color: #ff8ad6;
+                font-weight: 500;
+            }
+
+            .blue{
+                color: #8aceff;
+                font-weight: 500;
+            }
         }
 
         .first {
@@ -117,8 +143,11 @@ body {
             grid-column-end: 6;
             grid-row-start: 1;
             grid-row-end: 3;
-                        margin-left: 17%;
+            margin-left: 17%;
             margin-right: 17%;
+            display: flex;
+            flex-direction: column;
+            animation: slideInFromLeft .8s;
         }
 
         .second {
@@ -127,8 +156,35 @@ body {
             grid-column-end: 6;
             grid-row-start: 4;
             grid-row-end: 6;
-                        margin-left: 17%;
+            margin-left: 17%;
             margin-right: 17%;
+            display: flex;
+            flex-direction: column;
+            justify-self: right;
+            animation: slideInFromLeft .8s;
+
+            .bloc-detail {
+                display: flex;
+                margin-right: 2rem;
+                font-size: 1.6rem;
+                .logo {
+                    display: flex;
+                    width: 2.5rem;    /* taille uniforme */
+                    height: 2.5rem;
+                    padding: 0.5rem;
+                    margin-right: 0.5rem;
+                    img {
+                        max-width: 80%;
+                        max-height: 80%;
+                        object-fit: contain; 
+                      }
+                }
+
+                span{
+                    display: flex;
+                    align-items: center;
+                }
+            }
         }
 
         .third {
@@ -138,21 +194,25 @@ body {
             grid-row-end: 6;
             width: 50rem;
             height: 100%;
+            animation: slideInFromRight .8s;
         }
     }
 
     .centralBlock {
-        background-color: #101214;
-        border-radius: 25px;
-        margin-top: 10%;
-        margin-left: 17%;
-        margin-right: 17%;
+        background-color: #101214b4;
+
+        /* border-radius: 25px; */
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 2rem;
+
         box-shadow: 0 50px 40px -20px black;
 
-        outline: solid;
-        outline-color: #fffbf2 ;
-        outline-width: 3.5px;
-        outline-offset: 5px;
+        /* outline: solid; */
+        /* outline-color: #fffbf2 ; */
+        /* outline-width: 3.5px; */
+        /* outline-offset: 5px; */
         
         font-family: 'Quicksand', sans-serif;
 
