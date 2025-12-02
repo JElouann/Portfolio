@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="LostColors_style.css" />
 </head>
 <body class="bodyAnimateIn">
     <div class="bg"></div>
@@ -22,115 +22,49 @@
             <div id="name"> Elouann Jouenne</div>
             <div id="job"> Game Developper</div>
         </div>
-        <div class="socials">
-            <div>socials</div>
+        <div id="socials">
+            Socials
+            <div id = "link-logos">
+                <a href="https://www.linkedin.com/in/elouann-jouenne-b47759396" target="_blank"><img src="../../images/logos/logoLinkedin.png" class="social-logo"></a>
+                <a href="https://github.com/JElouann" target="_blank"><img src="../../images/logos/logoGithub.png" class="social-logo"></a>
+                <a href="https://itch.io/dashboard" target="_blank"><img src="../../images/logos/logoItchio.png" class="social-logo"></a>
+            </div>
         </div>
     </div>
 
     <!-- <h2 class="title"> Game Programming </h2> -->
-
-    <div class="centralBlock">
-        <div>
-            <img>
-            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, blanditiis! Officia, nesciunt eligendi obcaecati dicta, natus itaque laboriosam ratione molestias odio tenetur libero dolorum. Obcaecati dolore quasi mollitia asperiores quod.</span>
+    <form action="../../index.html" id ="backToIndex">
+        <input type="submit" value="⇦ Retour" />
+    </form>
+    
+    <div class = "contentGrid">
+        
+        <div class="grid-block first">
+            <div class="title pink"> À propos </div>
+            <span>Projet d'école dont le but était de faire, en trois semaines, un platformer 2D qui implémentait le design pattern SubClass Sandbox. Ce pattern a servi à créer plusieurs pouvoirs de différents types.</span>
         </div>
-        <form action="https://google.com">
-            <input type="submit" value="Go to other page" />
-        </form>
-        <span>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae molestiae ex cumque commodi ipsa! Itaque tempora maxime a veniam dolor modi inventore, beatae debitis, accusamus cumque deserunt esse natus id!
-        </span> 
+        
+        <div class="grid-block second">
+            <div class="title blue"> Informations </div>
+            <div class="bloc-detail">
+                <img src="../../images/logos/logoPerson.png" class="logo">
+                <span class="info">1 Personne</span>
+            </div>
+            <div class="bloc-detail">
+                <img src="../../images/logos/logoTime.png" class="logo">
+                <span class="info">3 semaines</span>
+            </div>
+            <div class="bloc-detail">
+                <img src="../../images/logos/logoGear.png" class="logo">
+                <span class="info">Unity (C#)</span>
+            </div>
+        </div>
+        
+        <iframe class="grid-block third" width="560" height="315" src="https://www.youtube.com/embed/dpZi1BzuxWQ?si=Rz6Z_7yOdf2uWh76?playlist=dpZi1BzuxWQ?si=Rz6Z_7yOdf2uWh76&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <div id="contentGrid">
-        <div class="contentBlock">
-            <div class="videoBlock">
-                <video loop autoplay muted preload="metadata"> <source src="videos/PortfolioPixelPowers.mp4" type="video/mp4"> </video>
-                <div class="additionalInfosBlock">
-                    <div class="additionalInfosContent">
-                        <img src="images/logos/logoPerson.png" class="logo">
-                        <span class="info"> 1 </span>
-                        <img src="images/logos/logoTime.png" class="logo">
-                        <span class="info"> 3 semaines </span>
-                        <img src="images/logos/logoGear.png" class="logo">
-                        <span class="info"> Unity (C#) </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="context">
-                <div class="contextTitle"> Pixel Powers (2024)</div>
-                <div class="contextPost"> Gameplay Developper</div>
-                <div class="contextText"> Petit projet qui consistait à faire un platformer en 2D en utilisant le design Pattern du SubClass Sandbox pour faire plusieurs pouvoirs à usage unique.</div>
-            </div>
-        </div>
-
-        <div class="contentBlock">
-            <div class="videoBlock">
-                <video loop autoplay muted preload="metadata"> <source src="videos/PortfolioFOH.mp4" type="video/mp4"> </video>
-                <div class="additionalInfosBlock">
-                    <div class="additionalInfosContent">
-                        <img src="images/logos/logoPerson.png" class="logo">
-                        <span class="info"> 5 </span>
-                        <img src="images/logos/logoTime.png" class="logo">
-                        <span class="info"> 3 mois </span>
-                        <img src="images/logos/logoGear.png" class="logo">
-                        <span class="info"> Unity (C#) </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="context">
-                <div class="contextTitle"> Field of Hope (2024)</div>
-                <div class="contextPost"> Lead Developper</div>
-                <div class="contextText"> Projet de fin d'année de première année à e-artsup. Le but est de survivre en alternant entre l'exploration d'un monde post apocalyptique et la gestion d'une ferme et de cultures précaires.</div>
-            </div>
-        </div>
-
-        <div class="contentBlock">
-            <div class="videoBlock">
-                <video loop autoplay muted preload="metadata"> <source src="videos/PortfolioLegalWar.mp4" type="video/mp4"> </video>
-                <div class="additionalInfosBlock">
-                    <div class="additionalInfosContent">
-                        <img src="images/logos/logoPerson.png" class="logo">
-                        <span class="info"> 5 </span>
-                        <img src="images/logos/logoTime.png" class="logo">
-                        <span class="info"> 2 semaines </span>
-                        <img src="images/logos/logoGear.png" class="logo">
-                        <span class="info"> Unity (C#) </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="context">
-                <a href = 'https://itch.io/game/widget/3352861/' class="contextTitle"> Legal War (2024)</a>
-                <div class="contextPost"> Gameplay Developper</div>
-                <div class="contextText"> Party Game politique à jouer sur le canapé avec ses amis qui a pour but de créer des débats et des alliances pour que chaque joueur fasse passer les lois qui arrangeront le mieux son parti.</div>
-            </div>
-        </div>
-
-        <div class="contentBlock">
-            <div class="videoBlock">
-                <video loop autoplay muted preload="metadata"> <source src="videos/PortfolioKaboumite.mp4" type="video/mp4"> </video>
-                <div class="additionalInfosBlock">
-                    <div class="additionalInfosContent">
-                        <img src="images/logos/logoPerson.png" class="logo">
-                        <span class="info"> 2 </span>
-                        <img src="images/logos/logoTime.png" class="logo">
-                        <span class="info"> 2 semaines </span>
-                        <img src="images/logos/logoGear.png" class="logo">
-                        <span class="info"> Unity (C#) </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="context">
-                <div class="contextTitle"> Kaboumite (2025)</div>
-                <div class="contextPost"> Gameplay Developper</div>
-                <div class="contextText"> Petit projet qui consistait à faire un clone de Bomberman en intégrant un maximum de feedbacks, avec plusieurs contraintes techniques dont une IA plus ou moins sommaire et fonctionnelle.</div>
-            </div>
-        </div>
-
+    <div class="centralBlock">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aperiam commodi accusantium minima fugit explicabo nam? Eos, quam. Doloribus molestiae officiis, impedit minima voluptatum quia nulla minus asperiores corrupti velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate error similique esse laborum fuga! Nostrum totam iusto debitis in, harum, eaque quod vitae hic delectus veniam officia similique aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corrupti ullam quas illum non recusandae quis quidem similique et. Labore est ea maiores excepturi. Magni eaque aut quos assumenda explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, facere consequatur tempore iusto corrupti illo dolor esse recusandae quam labore at, neque officia! Ducimus dolorem pariatur quo nostrum nisi officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque nobis nulla numquam harum? Facere sunt, dicta error fugit impedit ipsum deleniti cumque. Architecto cum quis maiores recusandae iusto nam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dolorem maiores earum repellendus animi, architecto quam aspernatur porro placeat voluptatibus expedita, obcaecati minus voluptatem vel sunt voluptas rem! Eaque, delectus!
     </div>
 </body>
 </html>
