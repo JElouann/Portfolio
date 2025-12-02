@@ -10,12 +10,13 @@ class ProjectBlock2 extends HTMLElement
         const technologies = this.getAttribute('technologies') || 'No technologies listed.';
         const description = this.getAttribute('description') || 'No description provided.';
         const projectPageLink = this.getAttribute('projectPageLink') || '#';
+        const videoPreviewLink = this.getAttribute('videoPreviewLink') || '#';
         const videoLink = this.getAttribute('videoLink') || '#';
 
         this.innerHTML = `
         <a href=${projectPageLink} class="project-block left">
             <div class="video">
-                <video loop autoplay muted preload="metadata" loading="lazy"> <source src=${videoLink}?raw=true" type="video/mp4"> Votre navigateur ne prend pas en charge les vidéos HTML5. </video>
+                <video loop autoplay muted preload="metadata" loading="lazy" poster=${videoPreviewLink}> <source src=${videoLink}?raw=true" type="video/mp4"> Votre navigateur ne prend pas en charge les vidéos HTML5. </video>
             </div>
             <div class="project-details">
                 <div class="bloc-detail">
