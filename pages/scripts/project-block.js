@@ -11,7 +11,6 @@ class ProjectBlock2 extends HTMLElement
         const description = this.getAttribute('description') || 'No description provided.';
         const projectPageLink = this.getAttribute('projectPageLink') || '#';
         const videoPreviewLink = this.getAttribute('videoPreviewLink') || '#';
-        const videoLink = this.getAttribute('videoLink') || '#';
 
         this.innerHTML = `
         <a href=${projectPageLink} class="project-block left">
