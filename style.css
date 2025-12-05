@@ -86,7 +86,8 @@ video {
     margin-top: 11rem;
     display: grid;
     row-gap: 8rem;
-    grid-template-columns: repeat(2, 2fr);
+    /* grid-template-columns: repeat(2, 2fr); LAYOUT 2 COL */
+    grid-template-columns: repeat(3, 3fr);
     grid-template-rows: repeat(2, 2fr);
     align-items: stretch;
 
@@ -96,7 +97,8 @@ video {
         flex-direction: column;
         background-color: #101214;
         border-radius: 2.5rem;
-        margin: 9rem;
+        /* margin: 9rem; LAYOUT 2 COL */
+        margin: 4rem;
         box-shadow: 0 50px 40px -20px black;
         outline: solid;
         outline-color: #fffbf2 ;
@@ -111,6 +113,13 @@ video {
         .video {
             display: flex;
             position: relative;
+        }
+
+        .previewImage {
+            display: flex;
+            position: relative;
+            width: 100%;
+            border-radius: 2.5rem 2.5rem 0 0;
         }
         .project-details {
             display: flex;
@@ -154,6 +163,7 @@ video {
             .project-title {
                 font-weight: 700;
                 font-size: 4rem;
+                font-size: 3.5rem;
                 text-decoration: none;
                 color: #ff8ad6;
 
@@ -224,6 +234,7 @@ video {
       grid-template-rows: auto;   /* laisse les lignes se créer naturellement */
     }
 }
+
 
 .bodyAnimateOut {
     transition: opacity .8s;

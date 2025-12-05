@@ -16,7 +16,7 @@ class ProjectBlock2 extends HTMLElement
         this.innerHTML = `
         <a href=${projectPageLink} class="project-block left">
             <div class="video">
-                <video loop autoplay muted preload="metadata" loading="lazy" poster=${videoPreviewLink}> <source src=${videoLink}?raw=true" type="video/mp4"> Votre navigateur ne prend pas en charge les vidéos HTML5. </video>
+                <img src=${videoPreviewLink} class="previewImage">
             </div>
             <div class="project-details">
                 <div class="bloc-detail">
