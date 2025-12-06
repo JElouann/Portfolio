@@ -45,6 +45,7 @@ body {
         
         #selfIntro {
             #name {
+                color: #8aceff;
                 font-size: 4rem;
                 font-weight: 700;
             }
@@ -56,7 +57,7 @@ body {
 
         #socials{
             font-size: 2rem;
-
+            color: #ff8ad6;
             #link-logos{
                 .social-logo {
                     width: 3rem;
