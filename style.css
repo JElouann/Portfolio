@@ -86,7 +86,7 @@ video {
 #project-grid {
     margin-top: 11rem;
     display: grid;
-    row-gap: 8rem;
+    row-gap: 6rem;
     /* grid-template-columns: repeat(2, 2fr); LAYOUT 2 COL */
     grid-template-columns: repeat(3, 3fr);
     grid-template-rows: repeat(2, 2fr);
@@ -109,7 +109,7 @@ video {
         position: relative;
         margin-bottom: 1rem;
         transition: 0.3s;
-
+        /* height: 70vh; */
 
         .video {
             display: flex;
@@ -163,7 +163,7 @@ video {
 
             .project-title {
                 font-weight: 700;
-                font-size: 4rem;
+                /* font-size: 4rem; */
                 font-size: 3.5rem;
                 text-decoration: none;
                 color: #ff8ad6;

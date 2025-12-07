@@ -211,26 +211,55 @@ body {
         }
     }
 
-    .centralBlock {
-        background-color: #101214b4;
+    .block {
+        background-color: #101214;
+        border-radius: 25px;
 
-        /* border-radius: 25px; */
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
         padding: 2rem;
+        margin-top: 7%;
 
         box-shadow: 0 50px 40px -20px black;
 
-        /* outline: solid; */
-        /* outline-color: #fffbf2 ; */
-        /* outline-width: 3.5px; */
-        /* outline-offset: 5px; */
-        
-        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        flex-direction: column;
 
-        position: relative;
-        animation: slideInFromTop .8s;
+        outline: solid;
+        outline-color: #fffbf2;
+        outline-width: 3.5px;
+        outline-offset: 5px;
+        font-family: 'Quicksand', sans-serif;
+        position: relative; 
+        animation: slideInFromRight .8s;
+
+        .title {
+            font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .pink{
+            color: #ff8ad6;
+            font-weight: 500;
+        }
+
+        .blue{
+            color: #8aceff;
+            font-weight: 500;
+        }
+    }
+
+    .central{
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+
+    .left{
+        margin-left: 9%;
+        margin-right: 35%;
+    }
+
+    .right{
+        margin-left: 30%;
+        margin-right: 9%;
     }
 }
 
