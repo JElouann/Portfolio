@@ -90,5 +90,24 @@
             En effet, bien que ce ne soit pas ma première spécialité, mon expérience en pixel art m'a permis de contribuer aux assets 2D en faisant notamment les tilesets et les VFXs du jeu.
         </span>
     </div>
+
+    <div class = "feature-display">
+        <img src="../../images/gifs/LostColors/gif_colorWave.gif" class="block">
+
+        <div class="block">
+            <div class="title pink"> Coloration du monde </div>
+            <span>
+                C'est moi qui me suis occupé de cette mécanique qui était centrale au gameplay du jeu et faisait partie de ses aspects clés depuis le tout début.
+                <br> <br>
+                Cet effet est une combinaison de 3 techniques :
+                <ul>
+                    <li> Un shader appliqué sur toutes les tilemaps qui les désature à fond, ce qui les rend noir et blanc. </li>
+                    <li> Ce même shader utilise un masque en ellipse pour "propager" la couleur lorsque l'on en augmente la taille. </li>
+                    <li> Un deuxième shader qui transitionne les sprites des props (arbres, vases, etc...) de leur version noir et blanc à leur version colorée.</li>
+                </ul>
+                Le tout est contrôlé par un script C# qui gère la taille du masque et la synchronisation entre les deux shaders.
+            </span>
+         </div>
+    </div>
 </body>
 </html>

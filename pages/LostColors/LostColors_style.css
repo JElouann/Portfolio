@@ -261,6 +261,22 @@ body {
         margin-left: 30%;
         margin-right: 9%;
     }
+
+    .feature-display{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-items: stretch;
+
+        .block {
+            margin: 7% 3.5% 5% 3.5%;
+        }
+
+        img{
+            padding: 0%;
+            width: 35%;
+        }
+    }
 }
 
 
