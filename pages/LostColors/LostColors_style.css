@@ -262,6 +262,16 @@ body {
         margin-right: 9%;
     }
 
+    .project-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5rem;
+        font-weight: 700;
+        /* color: #8aceff; */
+        text-align: center;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
     .feature-display{
         display: flex;
         flex-direction: row;

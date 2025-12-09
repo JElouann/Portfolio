@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="RacineStyle.css" />
 </head>
 <body class="bodyAnimateIn">
     <div class="bg"></div>
@@ -22,115 +22,94 @@
             <div id="name"> Elouann Jouenne</div>
             <div id="job"> Game Developper</div>
         </div>
-        <div class="socials">
-            <div>socials</div>
+        <div id="socials">
+            Socials
+            <div id = "link-logos">
+                <a href="https://www.linkedin.com/in/elouann-jouenne-b47759396" target="_blank"><img src="../../images/logos/logoLinkedin.png" class="social-logo"></a>
+                <a href="https://github.com/JElouann" target="_blank"><img src="../../images/logos/logoGithub.png" class="social-logo"></a>
+                <a href="https://mrbigre.itch.io" target="_blank"><img src="../../images/logos/logoItchio.png" class="social-logo"></a>
+            </div>
         </div>
     </div>
 
     <!-- <h2 class="title"> Game Programming </h2> -->
+    <form action="../../index.html" id ="backToIndex">
+        <input type="submit" value="⇦ Retour" />
+    </form>
 
-    <div class="centralBlock">
-        <div>
-            <img>
-            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, blanditiis! Officia, nesciunt eligendi obcaecati dicta, natus itaque laboriosam ratione molestias odio tenetur libero dolorum. Obcaecati dolore quasi mollitia asperiores quod.</span>
+    <div class="block central project-title"> Racine </div>
+
+    <div class = "contentGrid">
+        
+        <div class="grid-block first">
+            <div class="title pink"> À propos </div>
+            <span>Projet de fin de 2ème année, dont le but était d'utiliser les points forts du support mobile pour créer des mécaniques intéressantes liées au dessin et à la peinture.</span>
         </div>
-        <form action="https://google.com">
-            <input type="submit" value="Go to other page" />
-        </form>
-        <span>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae molestiae ex cumque commodi ipsa! Itaque tempora maxime a veniam dolor modi inventore, beatae debitis, accusamus cumque deserunt esse natus id!
-        </span> 
+        
+        <div class="grid-block second">
+            <div class="title blue"> Informations </div>
+            <div class="bloc-detail">
+                <img src="../../images/logos/logoPerson.png" class="logo">
+                <span class="info">10 personnes</span>
+            </div>
+            <div class="bloc-detail">
+                <img src="../../images/logos/logoTime.png" class="logo">
+                <span class="info">3 mois</span>
+            </div>
+            <div class="bloc-detail">
+                <img src="../../images/logos/logoGear.png" class="logo">
+                <span class="info">Unity (C#)</span>
+            </div>
+        </div>
+        
+        <iframe class = "grid-block third" width="560" height="315" src="https://www.youtube.com/embed/BXTnz7ebp-k?si=N3tl0TmB_OqIT3cI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <div id="contentGrid">
-        <div class="contentBlock">
-            <div class="videoBlock">
-                <video loop autoplay muted preload="metadata"> <source src="videos/PortfolioPixelPowers.mp4" type="video/mp4"> </video>
-                <div class="additionalInfosBlock">
-                    <div class="additionalInfosContent">
-                        <img src="images/logos/logoPerson.png" class="logo">
-                        <span class="info"> 1 </span>
-                        <img src="images/logos/logoTime.png" class="logo">
-                        <span class="info"> 3 semaines </span>
-                        <img src="images/logos/logoGear.png" class="logo">
-                        <span class="info"> Unity (C#) </span>
-                    </div>
-                </div>
-            </div>
+    <div class="block central">
+        <div class="title pink"> Résumé du projet</div>
+        <span> Le brief de ce projet était de répondre à un appel à projets de Devolver pour le mobile. Nous devions donc faire de la veille et
+             nous adapter à leurs demandes, et à leur DA générale. De plus, nous devions étudier les jeux déjà publiés par cet éditeur pour coller à leur style,
+              mais aussi ne pas faire quelque chose de trop ressemblant à ce qui existe déjà. 
+              <br> <br> 
+            Nous étions partis sur une DA low poly avec des textures en pixel art
+            mais à cause du support mobile qui offre peu de ressources, nous avons rencontré des problèmes de performance à la moitié du projet. Pour corriger le tir,
+            nous sommes passés à un jeu entièrement en 2D pixel art qui prenait comme références Hyper Light Drifter et Itta.</span>
+    </div>
 
-            <div class="context">
-                <div class="contextTitle"> Pixel Powers (2024)</div>
-                <div class="contextPost"> Gameplay Developper</div>
-                <div class="contextText"> Petit projet qui consistait à faire un platformer en 2D en utilisant le design Pattern du SubClass Sandbox pour faire plusieurs pouvoirs à usage unique.</div>
-            </div>
-        </div>
+    <div class="block central">
+        <div class="title blue"> Mon rôle</div>
+        <span>
+            En tant que <b>Lead Developper</b>, mon objectif était de <b>coordonner</b> le pôle code tout en facilitant le travail avec les autres pôles (principalement, 
+            les pôles design et art). Pour ce faire, il m'arrivait très souvent d'<b>échanger</b> avec les autres leads ainsi qu'avec les autres codes pour m'assurer
+            de la bonne compréhension des tâches à faire, en cours et de <b>l'architecture du projet</b> en général. Cette dernière avait été réalisée en grosse partie
+            par moi pendant la pré-production. 
+            <br> <br>
+            J'ai aussi été le <b>Tech Artist</b> du projet, en m'occupant pendant tout son long d'abord de la veille technique quant à
+            la <b>création</b> et l'<b>optimisation</b> des mécaniques de recoloration du monde et du dessin sur toile, puis à leurs créations et implémentations, sans compter
+            les nombreux <b>VFXs</b>. 
+            <br> <br>
+            Enfin, aux deux tiers du projet environ j'ai échangé ma casquette de développeur avec celle de <b>2D artist</b>, tout en restant en support si besoin pour le pôle code.
+            En effet, bien que ce ne soit pas ma première spécialité, mon expérience en pixel art m'a permis de contribuer aux assets 2D en faisant notamment les tilesets et les VFXs du jeu.
+        </span>
+    </div>
 
-        <div class="contentBlock">
-            <div class="videoBlock">
-                <video loop autoplay muted preload="metadata"> <source src="videos/PortfolioFOH.mp4" type="video/mp4"> </video>
-                <div class="additionalInfosBlock">
-                    <div class="additionalInfosContent">
-                        <img src="images/logos/logoPerson.png" class="logo">
-                        <span class="info"> 5 </span>
-                        <img src="images/logos/logoTime.png" class="logo">
-                        <span class="info"> 3 mois </span>
-                        <img src="images/logos/logoGear.png" class="logo">
-                        <span class="info"> Unity (C#) </span>
-                    </div>
-                </div>
-            </div>
+    <div class = "feature-display">
+        <img src="../../images/gifs/LostColors/gif_colorWave.gif" class="block">
 
-            <div class="context">
-                <div class="contextTitle"> Field of Hope (2024)</div>
-                <div class="contextPost"> Lead Developper</div>
-                <div class="contextText"> Projet de fin d'année de première année à e-artsup. Le but est de survivre en alternant entre l'exploration d'un monde post apocalyptique et la gestion d'une ferme et de cultures précaires.</div>
-            </div>
-        </div>
-
-        <div class="contentBlock">
-            <div class="videoBlock">
-                <video loop autoplay muted preload="metadata"> <source src="videos/PortfolioLegalWar.mp4" type="video/mp4"> </video>
-                <div class="additionalInfosBlock">
-                    <div class="additionalInfosContent">
-                        <img src="images/logos/logoPerson.png" class="logo">
-                        <span class="info"> 5 </span>
-                        <img src="images/logos/logoTime.png" class="logo">
-                        <span class="info"> 2 semaines </span>
-                        <img src="images/logos/logoGear.png" class="logo">
-                        <span class="info"> Unity (C#) </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="context">
-                <a href = 'https://itch.io/game/widget/3352861/' class="contextTitle"> Legal War (2024)</a>
-                <div class="contextPost"> Gameplay Developper</div>
-                <div class="contextText"> Party Game politique à jouer sur le canapé avec ses amis qui a pour but de créer des débats et des alliances pour que chaque joueur fasse passer les lois qui arrangeront le mieux son parti.</div>
-            </div>
-        </div>
-
-        <div class="contentBlock">
-            <div class="videoBlock">
-                <video loop autoplay muted preload="metadata"> <source src="videos/PortfolioKaboumite.mp4" type="video/mp4"> </video>
-                <div class="additionalInfosBlock">
-                    <div class="additionalInfosContent">
-                        <img src="images/logos/logoPerson.png" class="logo">
-                        <span class="info"> 2 </span>
-                        <img src="images/logos/logoTime.png" class="logo">
-                        <span class="info"> 2 semaines </span>
-                        <img src="images/logos/logoGear.png" class="logo">
-                        <span class="info"> Unity (C#) </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="context">
-                <div class="contextTitle"> Kaboumite (2025)</div>
-                <div class="contextPost"> Gameplay Developper</div>
-                <div class="contextText"> Petit projet qui consistait à faire un clone de Bomberman en intégrant un maximum de feedbacks, avec plusieurs contraintes techniques dont une IA plus ou moins sommaire et fonctionnelle.</div>
-            </div>
-        </div>
-
+        <div class="block">
+            <div class="title pink"> Coloration du monde </div>
+            <span>
+                C'est moi qui me suis occupé de cette mécanique qui était centrale au gameplay du jeu et faisait partie de ses aspects clés depuis le tout début.
+                <br> <br>
+                Cet effet est une combinaison de 3 techniques :
+                <ul>
+                    <li> Un shader appliqué sur toutes les tilemaps qui les désature à fond, ce qui les rend noir et blanc. </li>
+                    <li> Ce même shader utilise un masque en ellipse pour "propager" la couleur lorsque l'on en augmente la taille. </li>
+                    <li> Un deuxième shader qui transitionne les sprites des props (arbres, vases, etc...) de leur version noir et blanc à leur version colorée.</li>
+                </ul>
+                Le tout est contrôlé par un script C# qui gère la taille du masque et la synchronisation entre les deux shaders.
+            </span>
+         </div>
     </div>
 </body>
 </html>

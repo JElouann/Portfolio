@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="PixelPowers_style.css" />
+    <link rel="stylesheet" href="StereojumpStyle.css"/>
 </head>
 <body class="bodyAnimateIn">
     <div class="bg"></div>
@@ -37,24 +37,26 @@
         <input type="submit" value="⇦ Retour" />
     </form>
 
-    <div class="block central project-title"> Pixel Powers </div>
+    <div class="block central project-title"> Stereojump </div>
 
     <div class = "contentGrid">
-        
         <div class="grid-block first">
             <div class="title pink"> À propos </div>
-            <span>Projet de fin de 2ème année, dont le but était d'utiliser les points forts du support mobile pour créer des mécaniques intéressantes liées au dessin et à la peinture.</span>
+            <span> Projet professionnel réalisé en 3ème année. C'est un clone de Doodle Jump, qui sert de vitirine aux activités et ateliers de l'événement <a href="https://stereolux.org/agenda/stereogame" target="_blank">Stereogame</a> du Stereolux, notre client. 
+                <br> <br>
+                Quelques infos de plus <a href="https://stereolux.org/magazine/e-artsup-x-stereolux" target="_blank">ici</a>.
+            </span>
         </div>
         
         <div class="grid-block second">
             <div class="title blue"> Informations </div>
             <div class="bloc-detail">
                 <img src="../../images/logos/logoPerson.png" class="logo">
-                <span class="info">1 personne</span>
+                <span class="info">5 personnes</span>
             </div>
             <div class="bloc-detail">
                 <img src="../../images/logos/logoTime.png" class="logo">
-                <span class="info">2 semaines</span>
+                <span class="info">1 mois</span>
             </div>
             <div class="bloc-detail">
                 <img src="../../images/logos/logoGear.png" class="logo">
@@ -62,18 +64,19 @@
             </div>
         </div>
         
-        <iframe class="grid-block third" width="560" height="315" src="https://www.youtube.com/embed/dpZi1BzuxWQ?si=TlNfThgB5UQC_b0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="grid-block third" width="560" height="315" src="https://www.youtube.com/embed/MeagoUO5In4?si=pyx_xqVm91JBSJnf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div class="block central">
         <div class="title pink"> Résumé du projet</div>
-        <span> Le brief de ce projet était de répondre à un appel à projets de Devolver pour le mobile. Nous devions donc faire de la veille et
-             nous adapter à leurs demandes, et à leur DA générale. De plus, nous devions étudier les jeux déjà publiés par cet éditeur pour coller à leur style,
-              mais aussi ne pas faire quelque chose de trop ressemblant à ce qui existe déjà. 
-              <br> <br> 
-            Nous étions partis sur une DA low poly avec des textures en pixel art
-            mais à cause du support mobile qui offre peu de ressources, nous avons rencontré des problèmes de performance à la moitié du projet. Pour corriger le tir,
-            nous sommes passés à un jeu entièrement en 2D pixel art qui prenait comme références Hyper Light Drifter et Itta.</span>
+        <span> La demande du client était de faire un jeu qui servirait à présenter et introduire l'évenement et son programme. Le public étant très diversifié,
+            on a décidé de partir sur un jeu simple, classique et qui se démarquerait grâce à sa DA. On a donc itéré pour obtenir un personnage et un background
+            qui font référence au bâtiment du Stereolux et des powers ups et ennemis qui représentent les activités et ateliers de l'événement.
+            <br> <br>
+            Bien qu'il n'ait pas été retenu comme choix final, le projet a été salué par le client pour sa qualité et son professionnalisme, ainsi que son respect 
+            du brief. Ce projet a été une excellente expérience professionelle et m'a permis de travailler sous des nouvelles contraintes, 
+            notamment celle d'avoir un cahier des charges à respecter.
+        </span>
     </div>
 
     <div class="block central">
@@ -97,17 +100,9 @@
         <img src="../../images/gifs/LostColors/gif_colorWave.gif" class="block">
 
         <div class="block">
-            <div class="title pink"> Coloration du monde </div>
+            <div class="title pink"> Génération du niveau </div>
             <span>
-                C'est moi qui me suis occupé de cette mécanique qui était centrale au gameplay du jeu et faisait partie de ses aspects clés depuis le tout début.
-                <br> <br>
-                Cet effet est une combinaison de 3 techniques :
-                <ul>
-                    <li> Un shader appliqué sur toutes les tilemaps qui les désature à fond, ce qui les rend noir et blanc. </li>
-                    <li> Ce même shader utilise un masque en ellipse pour "propager" la couleur lorsque l'on en augmente la taille. </li>
-                    <li> Un deuxième shader qui transitionne les sprites des props (arbres, vases, etc...) de leur version noir et blanc à leur version colorée.</li>
-                </ul>
-                Le tout est contrôlé par un script C# qui gère la taille du masque et la synchronisation entre les deux shaders.
+
             </span>
          </div>
     </div>

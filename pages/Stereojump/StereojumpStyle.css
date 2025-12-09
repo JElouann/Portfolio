@@ -115,6 +115,16 @@ body {
         /* gap: 2rem; */
         align-items: stretch;
 
+        a{
+            text-decoration: none;
+            color: #ff8ad6;
+
+            &:hover {
+                    text-decoration: underline;
+                    color: #fc3963;
+                }
+        }
+
         .grid-block{
             background-color: #101214;
             border-radius: 25px;
