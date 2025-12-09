@@ -3,6 +3,7 @@
 }
 
 body {
+    padding-top: 7rem;
     display: block;
     flex-wrap: wrap;
     background-color: #101214;
@@ -45,8 +46,9 @@ body {
         /* Haut Droite Bas Gauche */
         padding: 1rem 0 1rem 0;
         
-        #selfIntro {
+               #selfIntro {
             #name {
+                color: #8aceff;
                 font-size: 4rem;
                 font-weight: 700;
             }
@@ -55,10 +57,10 @@ body {
                 font-size: 2rem;
             }
         }
-        
+
         #socials{
             font-size: 2rem;
-
+            color: #ff8ad6;
             #link-logos{
                 .social-logo {
                     width: 3rem;
@@ -72,8 +74,6 @@ body {
                 }
             }
         }
-
-
     }
     
     #backToIndex {
@@ -106,7 +106,7 @@ body {
     }
 
     .contentGrid{
-        margin-top: 18rem;
+        margin-top: 7%;
         display: grid;
         /* grid-template-columns: repeat(9, 1fr); */
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
