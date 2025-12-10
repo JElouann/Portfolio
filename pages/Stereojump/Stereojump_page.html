@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="StereojumpStyle.css"/>
+    <link rel="stylesheet" href="../ProjectPageStyle.css"/>
 </head>
 <body class="bodyAnimateIn">
     <div class="bg"></div>
@@ -40,12 +40,17 @@
     <div class="block central project-title"> Stereojump </div>
 
     <div class = "contentGrid">
-        <div class="grid-block first">
+        <div class="grid-block top">
             <div class="title pink"> À propos </div>
             <span> Projet professionnel réalisé en 3ème année. C'est un clone de Doodle Jump, qui sert de vitirine aux activités et ateliers de l'événement <a href="https://stereolux.org/agenda/stereogame" target="_blank">Stereogame</a> du Stereolux, notre client. 
                 <br> <br>
                 Quelques infos de plus <a href="https://stereolux.org/magazine/e-artsup-x-stereolux" target="_blank">ici</a>.
             </span>
+        </div>
+        
+        <div class="grid-block first">
+            <div class="title blue"> Build </div>
+            <a href="https://emryslg.itch.io/stereojump" target="_blank"> Page Itchio</a>
         </div>
         
         <div class="grid-block second">
@@ -82,29 +87,65 @@
     <div class="block central">
         <div class="title blue"> Mon rôle</div>
         <span>
-            En tant que <b>Lead Developper</b>, mon objectif était de <b>coordonner</b> le pôle code tout en facilitant le travail avec les autres pôles (principalement, 
-            les pôles design et art). Pour ce faire, il m'arrivait très souvent d'<b>échanger</b> avec les autres leads ainsi qu'avec les autres codes pour m'assurer
-            de la bonne compréhension des tâches à faire, en cours et de <b>l'architecture du projet</b> en général. Cette dernière avait été réalisée en grosse partie
-            par moi pendant la pré-production. 
-            <br> <br>
-            J'ai aussi été le <b>Tech Artist</b> du projet, en m'occupant pendant tout son long d'abord de la veille technique quant à
-            la <b>création</b> et l'<b>optimisation</b> des mécaniques de recoloration du monde et du dessin sur toile, puis à leurs créations et implémentations, sans compter
-            les nombreux <b>VFXs</b>. 
-            <br> <br>
-            Enfin, aux deux tiers du projet environ j'ai échangé ma casquette de développeur avec celle de <b>2D artist</b>, tout en restant en support si besoin pour le pôle code.
-            En effet, bien que ce ne soit pas ma première spécialité, mon expérience en pixel art m'a permis de contribuer aux assets 2D en faisant notamment les tilesets et les VFXs du jeu.
+            Etant donné que le projet était assez peu développé côté technique, mon rôle de Lead Developper était principalement de faire l'architecture du code et
+            de donner des tâches à faire aux autres développeurs. J'étais également présent quand ils avaient des questions ou des problèmes à résoudre, tout en
+            travaillant sur mes propres tâches en parallèle.
         </span>
     </div>
 
     <div class = "feature-display">
-        <img src="../../images/gifs/LostColors/gif_colorWave.gif" class="block">
+        <div class="block vitrine horizontal">
+            <img src="../../images/featureShows/Stereojump/LevelGen_1.png">
+            <img src="../../images/featureShows/Stereojump/LevelGen_2.png">
+            <img src="../../images/featureShows/Stereojump/LevelGen_3.png">                        
+        </div>
+        <!-- <img src="../../images/gifs/LostColors/gif_colorWave.gif" class="block"> -->
 
         <div class="block">
             <div class="title pink"> Génération du niveau </div>
             <span>
-
+                De par la simplicité du gameplay et de l'aspect technique, j'ai cherché à rendre intéressante la génération procédurale des plateformes. Pour cela,
+                j'ai implémenté un système de "zones" similaires à des biomes qui changent les éléments générés en fonction du score du joueur.
+                <br> <br>
+                J'ai ausssi créé un système de presets, qui permet à n'importe qui de changer facilement les paramètres de génération à travers diverses options :
+                <ul>
+                    <li>Types des plateformes, powers ups et ennemis</li>
+                    <li>Probabilités pour chaque élément de spawn par rapport aux autres</li>
+                    <li>Distance entre les éléments</li>
+                    <li>Position de base des éléments</li>
+                    <li>Facteur d'influence de la position de base des éléments</li>
             </span>
          </div>
+    </div>
+
+     <div class = "feature-display">
+        <div class="block">
+            <div class="title pink"> VFXs </div>
+            <span>
+                En tant que Tech Artist du projet, j'ai eu pour tâches de créer et d'implémenter les VFXs et autres feedbacks du jeu. Parmi ceux-ci, on peut compter :
+                <ul>
+                    <li> VFX d'atterrissage du joueur</li>
+                    <li> VFX de disparition des plateformes </li>
+                    <li> VFX des collectibles des powers ups </li>
+                    <li> VFX des jetpacks </li>
+                    <li> Traits de vitesse sur les côtés pendant le jetpack </li>
+                    <li> Effet post process de flash d'appareil photo / shader de neige télévisuelle </li>
+                    <li> Feedbacks plus légers du joueur (cape, léger tilt quand il bouge...)</li>
+                </ul>
+
+                Techniques utilisées : particle systems, shader graphs, post process, renderer features.
+            </span>
+         </div>
+
+         <div class="block vitrine horizontal">
+            <img src="../../images/gifs/featureShows/Stereojump/jetpack_GIF.gif">
+            <img src="../../images/gifs/featureShows/Stereojump/photoShoot_GIF.gif">
+            <div class="vitrine vertical">
+                <img src="../../images/gifs/featureShows/Stereojump/fragilePlatform_GIF.gif">
+                <img src="../../images/gifs/featureShows/Stereojump/ghostPlatform_GIF.gif">
+                <img src="../../images/gifs/featureShows/Stereojump/powerUp_GIF.gif">
+            </div>                        
+        </div>
     </div>
 </body>
 </html>
