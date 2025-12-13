@@ -37,13 +37,15 @@
         <input type="submit" value="⇦ Retour" />
     </form>
 
-    <div class="block central project-title"> Night With the Latte Killer</div>
+    <div class="block central project-title"> Night With The Latte Killer</div>
 
     <div class = "contentGrid">
         
         <div class="grid-block top">
             <div class="title pink"> À propos </div>
-            <span>Projet de fin de 2ème année, dont le but était d'utiliser les points forts du support mobile pour créer des mécaniques intéressantes liées au dessin et à la peinture.</span>
+            <span>Projet de 3ème année, notre premier jeu fait en C++. Le principe du jeu est que le joueur incarne un employé de coffee shop en fin de journée, et
+                doit survivre à l'attaque d'un tueur en série qui le piège dans la boutique.
+            </span>
         </div>
         
         <div class="grid-block first">
@@ -72,49 +74,74 @@
 
     <div class="block central">
         <div class="title pink"> Résumé du projet</div>
-        <span> Le brief de ce projet était de répondre à un appel à projets de Devolver pour le mobile. Nous devions donc faire de la veille et
-             nous adapter à leurs demandes, et à leur DA générale. De plus, nous devions étudier les jeux déjà publiés par cet éditeur pour coller à leur style,
-              mais aussi ne pas faire quelque chose de trop ressemblant à ce qui existe déjà. 
-              <br> <br> 
-            Nous étions partis sur une DA low poly avec des textures en pixel art
-            mais à cause du support mobile qui offre peu de ressources, nous avons rencontré des problèmes de performance à la moitié du projet. Pour corriger le tir,
-            nous sommes passés à un jeu entièrement en 2D pixel art qui prenait comme références Hyper Light Drifter et Itta.</span>
+        <span>
+            Le but du projet était de faire un jeu intégralement en C++ et qui implémentait au minimum deux design patterns. Après avoir itéré un peu sur le game design,
+            nous avons décidé de faire un jeu d'horreur basé sur le son, dans lequel le joueur se baladerait sur la map, cette dernière étant affichée grâce à des
+            caractères ASCII dans la console Windows.
+            <br> <br>
+            En travaillant le game design ainsi que l'architecture UML, deux patterns se sont dégagés assez naturellement : d'un côté la State Machine pour gérer le
+            comportement du tueur, afin qu'il soit un minimum imprévisible et donc qu'il instaure une tension et une peur chez le joueur. D'un autre côté, le pattern
+            Observer s'accordait avec le pitch du jeu, puisque nous voulions que des sons d'ambiance se déclenchent par moments, que ce soit en réaction à certaines
+            actions ou bien aléatoirement, pour renforcer l'atmosphère tendue.
+            <br> <br>
+            On considère le projet comme étant une réussite car les deux patterns sont implémentés et utilisés correctement, nous avons dépassé les attentes en terme
+            de jeu, et l'architecture du code n'a qu'un point faible visible mais facilement corrigeable.
+            <br> <br>
+            Consulter <a href="../../images/featureShows/LatteKiller/UML.png" target="_blank">l'architecture UML du projet</a>.
+        </span>
     </div>
 
     <div class="block central">
         <div class="title blue"> Mon rôle</div>
         <span>
-            En tant que <b>Lead Developper</b>, mon objectif était de <b>coordonner</b> le pôle code tout en facilitant le travail avec les autres pôles (principalement, 
-            les pôles design et art). Pour ce faire, il m'arrivait très souvent d'<b>échanger</b> avec les autres leads ainsi qu'avec les autres codes pour m'assurer
-            de la bonne compréhension des tâches à faire, en cours et de <b>l'architecture du projet</b> en général. Cette dernière avait été réalisée en grosse partie
-            par moi pendant la pré-production. 
+            Peu avant ce projet, j'avais fait en quelques jours un protoype d'un personnage qui se déplacait sur une map en ASCII dans la console,
+            ainsi qu'une bonne dose de veille technique. C'est donc naturellement que j'ai continué dans cette direction, en m'occupant de toute la partie
+            création et affichage de la map, ainsi que des intéractions du joueur avec cette dernière (donc tout ce qui est déplacement, collisions,
+            ouvertures de portes, ramassage d'objets, etc...).
             <br> <br>
-            J'ai aussi été le <b>Tech Artist</b> du projet, en m'occupant pendant tout son long d'abord de la veille technique quant à
-            la <b>création</b> et l'<b>optimisation</b> des mécaniques de recoloration du monde et du dessin sur toile, puis à leurs créations et implémentations, sans compter
-            les nombreux <b>VFXs</b>. 
-            <br> <br>
-            Enfin, aux deux tiers du projet environ j'ai échangé ma casquette de développeur avec celle de <b>2D artist</b>, tout en restant en support si besoin pour le pôle code.
-            En effet, bien que ce ne soit pas ma première spécialité, mon expérience en pixel art m'a permis de contribuer aux assets 2D en faisant notamment les tilesets et les VFXs du jeu.
+            Mon rôle était donc en grande majorité de coder et implémenter ce système, mais aussi d'assister mes coéquipiers d'abord quand ils avaient des questions
+            mais aussi lorsque ils avaient besoin de récupérer des données en lien avec la map (position du tueur, salle actuelle du joueur, salles adjacentes
+            à une position, etc...).
         </span>
     </div>
 
     <div class = "feature-display">
-        <img src="../../images/gifs/LostColors/gif_colorWave.gif" class="block">
+        <img src="../../images/featureShows/LatteKiller/ProtoMapManager.gif" class="block">
 
         <div class="block">
-            <div class="title pink"> Coloration du monde </div>
+            <div class="title pink"> Prototype de la map </div>
             <span>
-                C'est moi qui me suis occupé de cette mécanique qui était centrale au gameplay du jeu et faisait partie de ses aspects clés depuis le tout début.
+                On peut voir ici le protoype de map et de déplacement que j'ai fait en quelques jours, peu avant le projet. Le joueur peut se déplacer sur une
+                map composée d'un caractère ASCII.
                 <br> <br>
-                Cet effet est une combinaison de 3 techniques :
-                <ul>
-                    <li> Un shader appliqué sur toutes les tilemaps qui les désature à fond, ce qui les rend noir et blanc. </li>
-                    <li> Ce même shader utilise un masque en ellipse pour "propager" la couleur lorsque l'on en augmente la taille. </li>
-                    <li> Un deuxième shader qui transitionne les sprites des props (arbres, vases, etc...) de leur version noir et blanc à leur version colorée.</li>
-                </ul>
-                Le tout est contrôlé par un script C# qui gère la taille du masque et la synchronisation entre les deux shaders.
+                On pouvait, dans cette version déjà, choisir les caractères symbolisant le sol et le joueur, changer leurs couleurs,
+                et la taille de la map s'adaptait automatiquement à la taille de la fenêtre. De plus, tous les caractères s'affichent en même temps, ce qui non seulement
+                accélère l'affichage et permet un plus grand contrôle, mais aussi augmente l'immersion puisque il n'y a quasi aucune transition entre deux frames.
+                <br> <br>
+                Le procédé que j'utilise ici et dans le jeu final est de stocker la map finale (donc la map, avec la position du joueur, du tueur, des collectibles,
+                et des portes) dans un buffer qui fait la taille de la fenêtre et que j'affiche en une seule fois à chaque frame.
+                <br> <br>
+                Cette méthode me permet un contrôle total sur l'affichage, en tenant compte des limites de la console Windows que ce soit de taille, de couleurs disponibles
+                ou de rapidité d'affichage.
             </span>
          </div>
+    </div>
+
+    <div class = "feature-display">
+        <div class="block">
+            <div class="title blue"> Map finale </div>
+            <span>
+                La version finale de la map est faite de façon à ce que chaque salle soit symbolisée par son propre caractère, de même que pour chaque "paire de portes".
+                Cela nous permet notamment de récupérer la porte qui mène à celle sur laquelle se tient le joueur, puis de récupérer la salle de cette porte pour 
+                détecter si le tueur s'y trouve.
+                <br> <br>
+                De même, chaque caractère de salle est associé aux caractères qui lui sont adjacents sur la map, ce qui sert à récupérer rapidement les salles autour
+                d'une position donnée. Les murs sont symbolisés par des "#" pour gérer les collisions, et les collectibles par des "@".
+                <br> <br>
+                Au début de chaque frame, lorsque le buffer cité plus haut se crée, chaque élément est affiché différemment (joueur en jaune, murs en rouge...) selon notre choix.
+            </span>
+         </div>
+        <img src="../../images/featureShows/LatteKiller/MapXRayCheat.gif" class="block">
     </div>
 </body>
 </html>
