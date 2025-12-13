@@ -183,8 +183,29 @@ body {
             width: 21rem;
             display: flex;
             flex-direction: column;
-            justify-self: right;
-            animation: slideInFromLeft .8s;     
+            animation: slideInFromLeft .8s;
+
+            a{
+                margin: 1.5rem 7.5rem 0rem 7.5rem;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.5s;
+            
+                }
+            }
+            
+            .build-link{
+                /* padding: 1.5rem 0rem 0rem 7.5rem; */
+                width: 6rem;
+                height: 6rem;
+            
+                &:hover {
+                    filter: brightness(0) saturate(100%) invert(75%) sepia(8%) saturate(2535%) hue-rotate(178deg) brightness(102%) contrast(101%);
+
+                }
+            }
+            
         }
 
         .second {
