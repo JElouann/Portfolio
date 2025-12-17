@@ -43,7 +43,10 @@
         
         <div class="grid-block top">
             <div class="title pink"> À propos </div>
-            <span>Projet de fin de 2ème année, dont le but était d'utiliser les points forts du support mobile pour créer des mécaniques intéressantes liées au dessin et à la peinture.</span>
+            <span>Le but de ce projet de début de 2ème année était de faire un clone de BomberMan en mettant l'emphase sur plusieurs points. D'abord, il fallait faire
+                une IA un minimum fun à jouer contre. Ensuite, il fallait faire un jeu intéressant visuellement et surtout au niveau du juice sans faire appel à des
+                artistes ou prendre d'assets sur internet.
+            </span>
         </div>
     
         <div class="grid-block first">
@@ -72,49 +75,70 @@
 
     <div class="block central">
         <div class="title pink"> Résumé du projet</div>
-        <span> Le brief de ce projet était de répondre à un appel à projets de Devolver pour le mobile. Nous devions donc faire de la veille et
-             nous adapter à leurs demandes, et à leur DA générale. De plus, nous devions étudier les jeux déjà publiés par cet éditeur pour coller à leur style,
-              mais aussi ne pas faire quelque chose de trop ressemblant à ce qui existe déjà. 
-              <br> <br> 
-            Nous étions partis sur une DA low poly avec des textures en pixel art
-            mais à cause du support mobile qui offre peu de ressources, nous avons rencontré des problèmes de performance à la moitié du projet. Pour corriger le tir,
-            nous sommes passés à un jeu entièrement en 2D pixel art qui prenait comme références Hyper Light Drifter et Itta.</span>
+        <span>
+            La répartition des tâches s'est faite très naturellement sur ce projet. Tandis que je m'occupais de coder l'IA, la partie la plus conséquente du travail
+            techniquement, mon coéquipier était chargé de faire les déplacements du joueur ainsi que le comportement des bombes (donc ramassage, pose puis explosion).
+            Puis, lors de la deuxième semaine, je faisais d'un côté quasiment tout le juice et les feedbacks visuels, tandis qu'il s'occupait du sound design dans
+            son intégralité. Le rendu final est globalement très bien polish, et nous satisfaisait amplement quant à sa qualité apparente, bien que l'IA
+            manque encore un petit peu de réactivité en l'état.
+        </span>
     </div>
 
     <div class="block central">
         <div class="title blue"> Mon rôle</div>
         <span>
-            En tant que <b>Lead Developper</b>, mon objectif était de <b>coordonner</b> le pôle code tout en facilitant le travail avec les autres pôles (principalement, 
-            les pôles design et art). Pour ce faire, il m'arrivait très souvent d'<b>échanger</b> avec les autres leads ainsi qu'avec les autres codes pour m'assurer
-            de la bonne compréhension des tâches à faire, en cours et de <b>l'architecture du projet</b> en général. Cette dernière avait été réalisée en grosse partie
-            par moi pendant la pré-production. 
-            <br> <br>
-            J'ai aussi été le <b>Tech Artist</b> du projet, en m'occupant pendant tout son long d'abord de la veille technique quant à
-            la <b>création</b> et l'<b>optimisation</b> des mécaniques de recoloration du monde et du dessin sur toile, puis à leurs créations et implémentations, sans compter
-            les nombreux <b>VFXs</b>. 
-            <br> <br>
-            Enfin, aux deux tiers du projet environ j'ai échangé ma casquette de développeur avec celle de <b>2D artist</b>, tout en restant en support si besoin pour le pôle code.
-            En effet, bien que ce ne soit pas ma première spécialité, mon expérience en pixel art m'a permis de contribuer aux assets 2D en faisant notamment les tilesets et les VFXs du jeu.
+            Dès le début du projet, j'ai commencé à m'occuper de développer l'IA que le joueur va affronter. Cela m'a pris un peu plus d'une semaine, à force d'essais
+            et de différentes expérience. Après cela, je suis passé sur le juice et l'aspect visuel. Grâce à mon expérience en tech art sur Unity, j'ai pu obtenir un
+            rendu rétro facilement, surtout combiné au post process. 
         </span>
     </div>
 
     <div class = "feature-display">
-        <img src="../../images/gifs/LostColors/gif_colorWave.gif" class="block">
+        <img src="../../images/gifs/WIP_GIF.gif" class="block">
 
         <div class="block">
-            <div class="title pink"> Coloration du monde </div>
+            <div class="title pink"> Comportement de l'IA : principe de base </div>
             <span>
-                C'est moi qui me suis occupé de cette mécanique qui était centrale au gameplay du jeu et faisait partie de ses aspects clés depuis le tout début.
+                C'est moi qui me suis occupé de développer l'IA du jeu. Pour cela, je suis parti sur un modèle assez simple, celui d'une state machine ordinaire.
                 <br> <br>
-                Cet effet est une combinaison de 3 techniques :
+                Cet state machine est composée de trois états :
                 <ul>
-                    <li> Un shader appliqué sur toutes les tilemaps qui les désature à fond, ce qui les rend noir et blanc. </li>
-                    <li> Ce même shader utilise un masque en ellipse pour "propager" la couleur lorsque l'on en augmente la taille. </li>
-                    <li> Un deuxième shader qui transitionne les sprites des props (arbres, vases, etc...) de leur version noir et blanc à leur version colorée.</li>
+                    <li> Ramassage de bombes </li>
+                    <li> Fuite pour se mettre en sécurité </li>
+                    <li> Offensive et pose de bombes </li>
                 </ul>
-                Le tout est contrôlé par un script C# qui gère la taille du masque et la synchronisation entre les deux shaders.
+                Le tout utilise les NavMesh de Unity, qui permettent de déplacer des objets grâce à une implémentation d'un A*.
             </span>
          </div>
+    </div>
+
+    <div class = "feature-display">
+        <div class="block">
+            <div class="title blue"> Comportement de l'IA : la fuite </div>
+            <span>
+                J'utilise une formule de centre des masses pour calculer la "moyenne des positions", en quelque sorte, de toutes les bombes posées,
+                comparer cette position avec celle de mon IA afin de l'envoyer en sécurité, soit dans la direction opposée. 
+            </span>
+         </div>
+
+        <img src="../../images/gifs/WIP_GIF.gif" class="block">
+    </div>
+    
+    <div class = "feature-display">
+        <img src="../../images/gifs/WIP_GIF.gif" class="block">
+
+        <div class="block">
+            <div class="title pink"> Comportement de l'IA : l'attaque</div>
+            <span>
+                Pour essayer de rendre l'IA un peu plus vivante et imprévisible, j'ai décidé de m'inspirer de l'IA de Pinky (le fantôme rose) dans Pac-Man.
+                <br>
+                Tout comme cette dernière vise toujours deux cases devant PacMan, l'IA se dirige en permanence un peu devant le joueur, ce qui crée de grands
+                lorsque le joueur se tourne, ce qu'il est incité à faire par le dynamisme et la tension du jeu, et le danger que représentent les bombes.
+                <br> <br>
+                Le point faible de ce comportement est qu'il peut arriver que si le joueur décide de ne plus bouger, alors l'IA se placera devant lui mais légèrement
+                décalée en diagonale, ce qui fait qu'elle n'essayera pas de poser une bombe et rester donc statique, comme si elle était en pause.
+            </span>
+        </div>
     </div>
 </body>
 </html>
