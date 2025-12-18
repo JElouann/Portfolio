@@ -162,8 +162,8 @@ body {
 
         .top {
             padding: 2rem;
-            grid-column-start: 1;
-            grid-column-end: 6;
+            grid-column-start: 3;
+            grid-column-end: 8;
             grid-row-start: 1;
             grid-row-end: 3;
             margin-left: 17%;
@@ -176,8 +176,8 @@ body {
 
         .first{
             padding: 2rem;
-            grid-column-start: 0;
-            grid-column-end: 3;
+            grid-column-start: 4;
+            grid-column-end: 5;
             grid-row-start: 4;
             grid-row-end: 6;
             width: 21rem;
@@ -210,8 +210,8 @@ body {
 
         .second {
             padding: 2rem;
-            grid-column-start: 1;
-            grid-column-end: 6;
+            grid-column-start: 3;
+            grid-column-end: 8;
             grid-row-start: 4;
             grid-row-end: 6;
             display: flex;
@@ -288,6 +288,12 @@ body {
         .orange{
             color: #ffca67;
             font-weight: 500;
+        }
+
+        iframe{
+            margin-left: 4vw;
+            width: 90rem;
+            height: 60rem;
         }
     }
 
