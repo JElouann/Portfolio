@@ -13,7 +13,7 @@ body {
     color: #fffbf2;
     animation: fadeIn .8s ease-in;
 
-    .bg {
+    /* .bg {
         animation:slide 3s ease-in-out infinite alternate;
         background-image: linear-gradient(-60deg, rgb(186, 47, 156) 50%, #09f 50%);
         bottom:0;
@@ -23,7 +23,7 @@ body {
         right:-50%;
         top:0;
         z-index:-1;
-    }
+    } */
       
     .bg2 {
         animation-direction:alternate-reverse;
@@ -41,14 +41,14 @@ body {
         z-index: 9999;
         position: fixed;
         top: 0;
-        background-color: #101214;
+        background-color: #1d1e20;
         color: #fffbf2;        
         /* Haut Droite Bas Gauche */
         padding: 1rem 0 1rem 0;
         
                #selfIntro {
             #name {
-                color: #8aceff;
+                color: #5f43ff;
                 font-size: 4rem;
                 font-weight: 700;
             }
@@ -60,7 +60,7 @@ body {
 
         #socials{
             font-size: 2rem;
-            color: #ff8ad6;
+            color: #5f43ff;
             #link-logos{
                 .social-logo {
                     width: 3rem;
@@ -70,7 +70,7 @@ body {
                 }
 
                 .social-logo:hover {
-                    filter: brightness(0) saturate(100%) invert(75%) sepia(8%) saturate(2535%) hue-rotate(178deg) brightness(102%) contrast(101%);
+                    filter: brightness(0) saturate(100%) invert(91%) sepia(67%) saturate(938%) hue-rotate(310deg) brightness(104%) contrast(102%);
                 }
             }
         }
@@ -91,7 +91,7 @@ body {
             top: 120px;
             left: 5px;
             z-index: 99;
-            color: #101214;
+            color: #5f43ff;
             font-weight: 500;
             font-size: 25px;
             font-family: 'Montserrat', sans-serif;
@@ -101,17 +101,17 @@ body {
         }
 
         :hover{
-            color: #fffbf2;
+            color: #9895fb;
         }
     }
 
     a{
         text-decoration: none;
-        color: #ff8ad6;
+        color: #ffca67;
 
         &:hover {
             text-decoration: underline;
-            color: #fc3963;
+            color: #ffd78e;
         }
     }
 
@@ -126,15 +126,15 @@ body {
         align-items: stretch;
 
         .grid-block{
-            background-color: #101214;
-            border-radius: 25px;
+            background-color: #1d1e20;
+            border-radius: 0.3rem;
             /* margin-top: 10%; */
             /* margin-left: 17%; */
             /* margin-right: 17%; */
             box-shadow: 0 50px 40px -20px black;
 
             outline: solid;
-            outline-color: #fffbf2 ;
+            outline-color: #fffbf24c ;
             outline-width: 3.5px;
             outline-offset: 5px;
             
@@ -149,13 +149,13 @@ body {
                 font-family: 'Montserrat', sans-serif;
             }
 
-            .pink{
-                color: #ff8ad6;
+            .blue{
+                color: #5f43ff;
                 font-weight: 500;
             }
 
-            .blue{
-                color: #8aceff;
+            .orange{
+                color: #ffca67;
                 font-weight: 500;
             }
         }
@@ -201,8 +201,8 @@ body {
                 height: 6rem;
             
                 &:hover {
-                    filter: brightness(0) saturate(100%) invert(75%) sepia(8%) saturate(2535%) hue-rotate(178deg) brightness(102%) contrast(101%);
-
+                    /* filter: brightness(0) saturate(100%) invert(75%) sepia(8%) saturate(2535%) hue-rotate(178deg) brightness(102%) contrast(101%); */
+                    filter: brightness(0) saturate(100%) invert(88%) sepia(20%) saturate(1467%) hue-rotate(315deg) brightness(110%) contrast(113%);
                 }
             }
             
@@ -256,8 +256,8 @@ body {
     }
 
     .block {
-        background-color: #101214;
-        border-radius: 25px;
+        background-color: #1d1e20;
+        border-radius: 0.3rem;
 
         padding: 2rem;
         margin-top: 7%;
@@ -268,7 +268,7 @@ body {
         flex-direction: column;
 
         outline: solid;
-        outline-color: #fffbf2;
+        outline-color: #fffbf24c;
         outline-width: 3.5px;
         outline-offset: 5px;
         font-family: 'Quicksand', sans-serif;
@@ -280,13 +280,13 @@ body {
             font-family: 'Montserrat', sans-serif;
         }
 
-        .pink{
-            color: #ff8ad6;
+        .blue{
+            color: #5f43ff;
             font-weight: 500;
         }
 
-        .blue{
-            color: #8aceff;
+        .orange{
+            color: #ffca67;
             font-weight: 500;
         }
     }

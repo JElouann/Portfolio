@@ -45,7 +45,7 @@ body {
         
         #selfIntro {
             #name {
-                color: #fffbf2;
+                color: #6d68ff;
                 font-size: 4rem;
                 font-weight: 700;
             }
@@ -57,7 +57,7 @@ body {
 
         #socials{
             font-size: 2rem;
-            color: #fffbf2;
+            color: #6d68ff;
             #link-logos{
                 .social-logo {
                     width: 3rem;
@@ -67,11 +67,21 @@ body {
                 }
 
                 .social-logo:hover {
-                    filter: brightness(0) saturate(100%) invert(75%) sepia(8%) saturate(2535%) hue-rotate(178deg) brightness(102%) contrast(101%);
+                    filter: brightness(0) saturate(100%) invert(91%) sepia(67%) saturate(938%) hue-rotate(310deg) brightness(104%) contrast(102%);
                 }
             }
         }
+    }
 
+    #self-presentation{
+        display: flex;
+        flex-direction: row;
+
+        img{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+        }
     }
 }
 
@@ -106,7 +116,7 @@ video {
         margin: 2rem;
         box-shadow: 0 50px 40px -20px black;
         outline: solid;
-        outline-color: #fffbf2 ;
+        outline-color: #fffbf24c ;
         outline-width: 3.5px;
         outline-offset: 5px;
         /* position -> relative : Pour le bien de l'animation left */
@@ -170,12 +180,12 @@ video {
                 /* font-size: 4rem; */
                 font-size: 3.5rem;
                 text-decoration: none;
-                color: #ff8ad6;
+                color: #6d68ff;
 
                 &:hover {
                     text-decoration: underline;
                     text-decoration-thickness: 2px;
-                    color: #fc3963;
+                    color: #9895fb;
                 }
             }
             .project-post {
@@ -183,7 +193,7 @@ video {
                 font-size: 2.5rem; */
                 font-weight: 500;
                 font-size: 2rem;
-                color: #8aceff;
+                color: #ffca67;
             }
             .project-text {
                 font-family: 'Quicksand';
@@ -203,7 +213,7 @@ video {
     .project-block:hover{
         /* transform: scale(1.1);
         transition: 0.5s; */
-        outline-color: #ff8ad6 ;
+        outline-color: #fffbf2 ;
         top: -10px;
     }
 
