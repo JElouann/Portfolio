@@ -101,7 +101,7 @@ video {
     grid-template-columns: repeat(3, 3fr);
     grid-template-rows: repeat(2, 2fr);
     align-items: stretch;
-    padding: 0 10rem 0 10rem;
+    padding: 0 5rem 0 5rem;
 
     .project-block {
         position: relative;
