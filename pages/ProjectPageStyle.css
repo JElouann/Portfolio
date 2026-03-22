@@ -187,6 +187,7 @@ body {
 
             a{
                 margin: 1.5rem 7.5rem 0rem 7.5rem;
+                transition: 0.2s;
 
                 &:hover {
                     transform: scale(1.2);
