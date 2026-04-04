@@ -1,4 +1,4 @@
-class ProjectBlock2 extends HTMLElement 
+class ProjectBlock extends HTMLElement 
 {
     connectedCallback() 
     { 
@@ -42,4 +42,4 @@ class ProjectBlock2 extends HTMLElement
     }
 }
 
-customElements.define('project-block2', ProjectBlock2);
+customElements.define('project-block', ProjectBlock);

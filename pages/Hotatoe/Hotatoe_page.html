@@ -52,7 +52,7 @@
         
         <div class="grid-block first">
             <div class="title orange"> Build </div>
-            <a href="https://emryslg.itch.io/lost-colors" target="_blank"><img src="../../images/logos/logoItchio.png" class="build-link"></a>            
+            <a  target="_blank"><img src="../../images/logos/logoItchio.png" class="build-link"></a>            
         </div>
 
         <div class="grid-block second">
@@ -86,7 +86,7 @@
             nous sommes passés à un jeu entièrement en 2D pixel art qui prenait comme références Hyper Light Drifter et Itta.</span> -->
             <b> Brief :</b>
             <ul>
-                <li> faire un jeu qui sera <b>projeté sur la façade d'un bâtiment</b>, dans le cadre d'un évènement nocturne de <b>mapping</b></li>
+                <li> Faire un jeu destiné à être <b>projeté sur la façade d'un bâtiment</b>, dans le cadre d'un évènement nocturne de <b>mapping.</b></li>
             </ul>
     </div>
 
@@ -96,36 +96,72 @@
             <b>En tant que Developper : </b>
             <br>
             <ul>
-                <li> participer à la conception de <b>l'architecture de développement du jeu</b> </li>
-                <li> <b>prototyper</b> la mécanique de <b>boule de feu</b></li>
+                <li> Participer à la conception de <b>l'architecture de développement du jeu</b>. </li>
+                <li> <b>Prototyper</b> la mécanique de <b>boule de feu</b>.</li>
             </ul>
             <br>
             <b>En tant que Tech Artist : </b>
             <br>
             <ul>
-                <li> veille technique </li>
-                <li> création de <b>les shaders et VFX du jeu</b></li>
+                <li> Veille technique. </li>
+                <li> Création des <b>shaders et VFX du jeu</b>.</li>
             </ul>
+
+            Pour un party game projeté en grand sur un bâtiment, de nuit, il était <b>essentiel</b> de pousser les effets visuels pour rendre le jeu <b>aussi agréable à jouer qu'à regarder</b>.
+            <br>
+            C'est pour cela que assez tôt dans la production, je suis passé du <b>gameplay programming</b> au <b>tech art</b>.
+            <br>
         </span>
     </div>
 
     <div class = "feature-display">
-        <img src="../../images/gifs/featureShows/LostColors/LostColors_feature_colorWave.gif" class="block">
+        <div class="block vitrine horizontal">
+            <img src="../../images/gifs/featureShows/Hotatoe/hotatoe_featurePreview_fireballRespawnVFX.gif">
+            <img src="../../images/gifs/featureShows/Hotatoe/ezgif.com-optimize (2).gif">
+            <img src="../../images/gifs/featureShows/Hotatoe/hotatoe_featurePreview_explosionVFX.gif">                     
+        </div>
 
         <div class="block">
-            <div class="title orange"> Coloration du monde </div>
+            <div class="title orange"> Tech Art - Workflow </div>
             <span>
-                C'est moi qui me suis occupé de cette mécanique qui était centrale au gameplay du jeu et faisait partie de ses aspects clés depuis le tout début.
-                <br> <br>
-                Cet effet est une combinaison de 3 techniques :
                 <ul>
-                    <li> Un shader appliqué sur toutes les tilemaps qui les désature à fond, ce qui les rend noir et blanc. </li>
-                    <li> Ce même shader utilise un masque en ellipse pour "propager" la couleur lorsque l'on en augmente la taille. </li>
-                    <li> Un deuxième shader qui transitionne les sprites des props (arbres, vases, etc...) de leur version noir et blanc à leur version colorée.</li>
+                    <li> J'ai fait une <b>veille générale</b> sur la fête forraine, les néons, et les party games.</li>
+                    <li> J'ai pris des références de <b>shaders</b>, <b>VFX</b> et <b>vidéos de feu</b>.</li>
+                    <li> J'ai <b>itéré</b> sur des shaders de flammes pour la balle en elle-même, mais aussi pour les particules présentes dans certains VFX.</li>
+                    <li> J'ai <b>étudié</b> des VFX faits par d'autres personnes et je les ai <b>décomposés</b>.</li>
+                    <li> Ainsi, j'ai pu <b>empiler des emitters</b> pour créer des effets visuels plus <b>complexes et impressionants</b>, comme l'explosion.</li>
                 </ul>
-                Le tout est contrôlé par un script C# qui gère la taille du masque et la synchronisation entre les deux shaders.
             </span>
          </div>
+    </div>
+
+    <div class="block central">
+        <div class="title orange"> Tech Art - Liste </div>
+        <span>
+            <b> Shaders : </b>
+            <br>
+            <ul>
+                <li> Material de base </li>
+                <li> Particules de base </li>
+                <li> Boule de feu </li>
+                <li> Particules de feu </li>
+                <li> Shockwave </li>
+            </ul>
+            <br>
+            <b> VFX : </b>
+            <br>
+            <ul>
+                <li> Déplacement de la boule de feu </li>
+                <li> Trainée avec flammesde la boule de feu </li>
+                <li> Trainée avec confettis de la boule de feu </li>
+                <li> Lancer de la boule de feu </li>
+                <li> Réapparition de la boule de feu </li>
+                <li> Joueur touché par la boule de feu </li>
+                <li> Explosion d'un joueur </li>
+                <li> Déplacement d'un joueur </li>
+                <li> Joueur en tête au score </li>
+            </ul>
+        </span>
     </div>
 </body>
 </html>

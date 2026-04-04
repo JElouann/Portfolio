@@ -352,11 +352,14 @@ body {
             img{
                 border-radius: 25px;                
                 margin: 0 0.25rem 0 0.25rem;
+                /* width: 15rem;
+                height: 15rem; */
             }
         }
 
         .horizontal{
             flex-direction: row;
+            /* width: 40vw; */
         }
 
         .vertical{
