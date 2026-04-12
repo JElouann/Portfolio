@@ -1,4 +1,5 @@
 window.addEventListener("load", () => {
+    setTimeout(() => {
   const getFontSize = (textLength, gridColumnCount) => {
   const baseSize = 9
   if (textLength >= baseSize) {
@@ -20,4 +21,5 @@ const gridColumnCount = gridComputedStyle.getPropertyValue("grid-template-column
 titles.forEach(title => {
   title.style.fontSize = getFontSize(title.textContent.length, 10 / gridColumnCount);
 })
+}, 50)
 })
