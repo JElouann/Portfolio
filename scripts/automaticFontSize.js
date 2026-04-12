@@ -15,8 +15,11 @@ if (!titles) {
   console.warn("Titles .project-title introuvables");
   return; // stop proprement
 }
-const gridComputedStyle = window.getComputedStyle(document.getElementById('project-grid'));
-const gridColumnCount = gridComputedStyle.getPropertyValue("grid-template-columns").split(" ").length;
+// const gridComputedStyle = window.getComputedStyle(document.getElementById('project-grid'));
+// const gridColumnCount = gridComputedStyle.getPropertyValue("grid-template-columns").split(" ").length;
+const gridColumnCount = grid.children.length
+  ? Math.round(grid.offsetWidth / grid.children[0].offsetWidth)
+  : 1;
 
 titles.forEach(title => {
   title.style.fontSize = getFontSize(title.textContent.length, 10 / gridColumnCount);
