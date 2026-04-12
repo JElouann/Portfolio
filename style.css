@@ -179,7 +179,10 @@ video {
             .project-title {
                 font-weight: 700;
                 /* font-size: 4rem; */
-                font-size: 3.5rem;
+                /* font-size: 3.5rem; */
+                font-size: clamp(14px, 2cqi, 100cqi);
+                white-space: nowrap;
+
                 text-decoration: none;
                 color: #6d68ff;
 
